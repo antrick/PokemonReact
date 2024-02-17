@@ -1,0 +1,41 @@
+/* .loadingScreen {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--bg-gradient);
+}
+
+.loadingScreenIcon {
+    width: 30%;
+    height: 30%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+} */
+
+.loadingScreen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-gradient);
+}
+
+.loadingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.loadingScreenIcon {
+    width: 50%;
+    height: 50%; /* Ajustar la altura automáticamente */
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.textLoading {
+    font-weight: bold;
+}
