@@ -3,15 +3,16 @@ import styles from '../styles/header.module.css'
 
 type HeaderProps = {
     query: string;
+    placeholder: string;
     setQuery: (query: string) => void;
 }
 
-const Header = ({query, setQuery}: HeaderProps) => {
+const Header = ({query, placeholder, setQuery}: HeaderProps) => {
   return (
     <header className={styles.header}>
         <input 
             className={styles.input} 
-            placeholder='Buscar pokemon...' 
+            placeholder={placeholder} 
             type='text' 
             value={query} 
             onChange={(e) => setQuery(e.target.value)}

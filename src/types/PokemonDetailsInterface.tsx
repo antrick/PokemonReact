@@ -12,3 +12,22 @@ export type PokemonDetails = {
     attack: number;
     defense: number;
 }
+
+export interface ItemApi {
+    name: string;
+    url: string;
+}
+
+export type Items = {
+    name: string;
+    id: number;
+    srcImg: string;
+}
+
+export type ItemsDetails = {
+    name: string;
+    id: number;
+    srcImg: string;
+    effect: string;
+    shortEffect: string;
+}

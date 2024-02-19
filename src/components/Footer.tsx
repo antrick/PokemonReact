@@ -15,7 +15,6 @@ const Footer = () => {
             Pokemons
         </Link>
         <Link 
-            onClick={(e) => e.preventDefault()}
             to="/items" 
             className={stylesFooter.footerLink}
         >

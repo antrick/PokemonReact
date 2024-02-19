@@ -5,6 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Pokemon from './pages/Pokemon';
 import Pokemons from './pages/Pokemons';
 import Items from './pages/Items';
+import Item from './pages/Item';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/pokemons/:name' element={<Pokemon />} />
           <Route path='/pokemons' element={<Pokemons />} />
+          <Route path='/items/:name' element={<Item />} />
           <Route path='/items' element={<Items />} />
           <Route path='/' element={<Pokemons />} />
         </Routes>

@@ -40,7 +40,7 @@ const Pokemons = () => {
 
   return (
       <>
-        <Header query={query} setQuery={setQuery} />
+        <Header query={query} setQuery={setQuery} placeholder='Buscar pokemon...'/>
         <main>
               <nav className={stylesMain.nav}>
                 {filterPokemons?.slice(0,151).map((pokemon) => (
